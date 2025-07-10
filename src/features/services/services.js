@@ -63,7 +63,7 @@ const serviceTemplate = (name, desc, price) => `
       <h3 class="text-xl font-semibold mb-2 text-black">${capitalize(name)}</h3>
       <p class="text-gray-700 min-h-[3rem]">${desc ? capitalize(desc) : '&nbsp;'}</p>
     </div>
-    <div class="text-[#C11C84] opacity-40 font-bold text-lg mt-auto">${price}</div>
+    <div class="text-pink-400 font-bold text-lg mt-auto">${price}</div>
   </div>
 `;
 
