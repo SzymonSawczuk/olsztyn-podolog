@@ -18,5 +18,3 @@ window.addEventListener("scroll", () => {
     header?.classList.remove("lg:shadow-md");
   }
 });
-
-// Scroll animation for pricing section

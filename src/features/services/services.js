@@ -54,7 +54,7 @@ function toggleGroup(id) {
 const serviceTemplate = (name, desc, price) => `
   <div class="bg-white lg:bg-white/10
               border border-black/20 lg:border-transparent
-              backdrop-blur-none lg:backdrop-blur-md
+              backdrop-blur-none lg:backdrop-blur-xs
               ring-0 lg:ring-1 lg:ring-white/10
               shadow-none lg:shadow-md hover:lg:shadow-lg
               rounded-2xl p-6 flex flex-col justify-between h-full service-box
