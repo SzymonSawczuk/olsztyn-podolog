@@ -17,13 +17,33 @@
     />
   </head>
   <body>
-    <div class="relative w-full min-h-screen bg-white overflow-hidden">
-      <div id="app_header"></div>
-      <div id="app_hero"></div>
-      <div id="app_services"></div>
-    </div>
+      <div class="w-screen">
+        <div id="app_header"></div>
+        <div id="app_hero"></div>
+        <div id="app_services"></div>
+        <div id="app_about"></div>
+        <div id="app_gallery"></div>
+        <div id="app_location"></div>
+        <div id="app_footer"></div>
+      </div>
+
+      <div id="cookie-banner" class="fixed bottom-4 left-4 right-4 md:left-6 md:right-auto md:max-w-md bg-white border border-pink-300 shadow-lg rounded-xl p-4 z-[999] flex flex-col md:flex-row items-center justify-between gap-4 transition-opacity duration-300">
+        <p class="text-sm text-gray-800">
+          Ta strona używa plików cookies do analityki i usług zewnętrznych.
+          <a href="src/policy.html" class="underline text-pink-500 opacity-60 hover:text-pink-600">Dowiedz się więcej</a>.
+        </p>
+        <div class="flex gap-2">
+          <button id="accept-cookies" class="bg-pink-500 opacity-60 hover:bg-pink-600 text-white px-4 py-2 rounded-lg text-sm shadow cursor-pointer">
+            Akceptuję
+          </button>
+          <button id="deny-cookies" class="bg-gray-300 hover:bg-gray-400 text-gray-800 px-4 py-2 rounded-lg text-sm cursor-pointer">
+            Odrzuć
+          </button>
+        </div>
+      </div>
+
 
     <script src="/src/script.js"></script>
-    <script src="/src/features/services/services.js"></script>
+
   </body>
 </html>

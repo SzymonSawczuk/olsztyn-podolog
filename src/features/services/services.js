@@ -1,21 +1,9 @@
 const SEPARATOR = ';';
 
 function loadPricing() {
-  return fetch("/src/data/pricing.txt")
+  return fetch("/src/data/pricing.json")
     .then(response => response.text())
-    .then(text => text.split('\n'))
-    .then(lines => {
-      const col_names = lines[0].split(SEPARATOR);
-      return lines.slice(1).map(line => {
-        if (line === '') return;
-        const values = line.split(SEPARATOR);
-        const row = {};
-        col_names.forEach((col, index) => {
-          row[col] = values[index];
-        });
-        return row;
-      }).filter(Boolean);
-    });
+    .then(text => JSON.parse(text));
 }
 
 function revealOnScroll() {
@@ -24,7 +12,7 @@ function revealOnScroll() {
   boxes.forEach(box => {
     const rect = box.getBoundingClientRect();
     if (rect.top < windowHeight - 100) {
-      box.classList.remove("opacity-0", "translate-y-8");
+      box.classList.remove("opacity-0", "translate-y-4");
       box.classList.add("opacity-100", "translate-y-0");
     }
   });
@@ -58,7 +46,7 @@ const serviceTemplate = (name, desc, price) => `
               ring-0 lg:ring-1 lg:ring-white/10
               shadow-none lg:shadow-md hover:lg:shadow-lg
               rounded-2xl p-6 flex flex-col justify-between h-full service-box
-              transition-transform duration-700 ease-in-out  transform opacity-0 translate-y-8">
+              transition-transform duration-700 ease-in-out  transform opacity-0 translate-y-4">
     <div class="mb-4">
       <h3 class="text-xl font-semibold mb-2 text-black">${capitalize(name)}</h3>
       <p class="text-gray-700 min-h-[3rem]">${desc ? capitalize(desc) : '&nbsp;'}</p>
@@ -91,8 +79,7 @@ function renderPricing(filter = "") {
   Object.entries(allServices).forEach(([groupName, services]) => {
     const filtered = services.filter(service =>
       service.name.toLowerCase().includes(filter) ||
-      (service.desc && service.desc.toLowerCase().includes(filter)) ||
-      (service.price && service.price.toLowerCase().includes(filter))
+      (service.desc && service.desc.toLowerCase().includes(filter)) 
     );
 
     if (filtered.length === 0) return;
@@ -130,5 +117,9 @@ loadPricing().then(data => {
 
   window.addEventListener("scroll", revealOnScroll);
   window.addEventListener("load", revealOnScroll);
+
+
 });
+
+
 
