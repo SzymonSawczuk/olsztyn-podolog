@@ -10,14 +10,14 @@ function loadPictures() {
 }
 
 const imageTemplate = (sliceIndex, pictureIndex, imgPath) => {
-  return `<a class="grid-${sliceIndex}${pictureIndex} will-change-transform parallax" href = "${PATH_MAX}${imgPath.split('/').at(-1)}">
-            <img src="${imgPath}" class="h-100 object-cover
+  return `<a class="grid-${sliceIndex}${pictureIndex} h-100 will-change-transform parallax" href = "${PATH_MAX}${imgPath.split('/').at(-1)}">
+            <img src="${imgPath}" class="h-[100%] object-cover
               border border-black/20 lg:border-transparent
               backdrop-blur-none lg:backdrop-blur-xs
               ring-0 lg:ring-1 lg:ring-white/10
               shadow-none lg:shadow-lg
               transition-transform duration-300 transform hover:scale-102
-              rounded-2xl opacity-90 cursor-pointer" alt="${imgPath.split('.')[0]}" height="300" width="300"/>
+              rounded-2xl opacity-90 cursor-pointer" alt="${imgPath.split('.')[0]}" width="300"/>
           </div>`;
 };
 
