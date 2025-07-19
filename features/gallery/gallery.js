@@ -11,7 +11,7 @@ function loadPictures() {
 
 const imageTemplate = (sliceIndex, pictureIndex, imgPath) => {
   return `<a class="grid-${sliceIndex}${pictureIndex} h-100 will-change-transform parallax" href = "${PATH_MAX}${imgPath.split('/').at(-1)}">
-            <img src="${imgPath}" class="h-[100%] object-cover
+            <img src="${imgPath}" fetchPriority="high" class="h-[100%] object-cover
               border border-black/20 lg:border-transparent
               backdrop-blur-none lg:backdrop-blur-xs
               ring-0 lg:ring-1 lg:ring-white/10
@@ -45,7 +45,7 @@ loadPictures().then(pictures => {
       return;
     }
 
-    const gallerySection = document.getElementById("gallery");
+    const gallerySection = document.getElementById("galeria");
 
     const galleryRect = gallerySection.getBoundingClientRect();
     const viewportHeight = window.innerHeight;
