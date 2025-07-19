@@ -45,7 +45,7 @@ loadPictures().then(pictures => {
       return;
     }
 
-    const gallerySection = document.getElementById("gallery");
+    const gallerySection = document.getElementById("galeria");
 
     const galleryRect = gallerySection.getBoundingClientRect();
     const viewportHeight = window.innerHeight;
