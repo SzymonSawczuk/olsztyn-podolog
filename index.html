@@ -1,137 +1,88 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="pl">
   <head>
+    <meta charset="utf-8">
+    <title>Podolog Olsztyn – Profesjonalna Pielęgnacja Stóp</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Podolog Olsztyn</title>
-    <meta name="description" content="Podologia jest dziedziną medycyny, której celem jest profilaktyka zdrowia naszych stóp. PODOLOG zapobiega powstawaniu zmian chorobowych i przeprowadza określone terapie.">
-    <meta name="keywords" content="podolog olsztyn, olsztyn podolog, Podolog, Podologia, Choroby stóp, Olsztyn, pedicure stóp, podolog pedicure, pedicure podolog, olsztyn pedicure">
-    <meta name="author" content="Szymon Sawczuk">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="zdj/favicon.png" sizes="64x64"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="resize.js"></script>
+    <meta name="description" content="Gabinet podologiczny w Olsztynie – profesjonalna pielęgnacja stóp, usuwanie odcisków, wrastających paznokci. Umów się na wizytę już dziś!">
+    <meta name="keywords" content="podolog Olsztyn, gabinet podologiczny, pielęgnacja stóp, usuwanie odcisków, wrastające paznokcie, leczenie stóp, kurzajki, manicure, pedicure">
+    <meta name="author" content="Gabinet Specjalistycznej Pielęgnacji Stóp i Dłoni Agnieszka Sawczuk">
 
+    <meta property="og:title" content="Podolog Olsztyn – Profesjonalna Pielęgnacja Stóp">
+    <meta property="og:description" content="Zadbaj o zdrowie swoich stóp – profesjonalna opieka podologiczna w Olsztynie.">
+    <meta property="og:image" content="https://olsztyn-podolog.pl/data/gallery/max/Gabinet.jpeg">
+    <meta property="og:url" content="https://olsztyn-podolog.pl">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data/gallery/favicon.png">
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!--Tailwind-->
+    <link href="./tailwind-style.css" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="styles.css"
+    />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Gabinet Specjalistycznej Pielęgnacji Stóp i Dłoni Agnieszka Sawczuk",
+      "image": "https://olsztyn-podolog.pl/data/gallery/max/Gabinet.jpeg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ul. Krzysztofa Mrongowiusza 6/4",
+        "addressLocality": "Olsztyn",
+        "postalCode": "11-041",
+        "addressCountry": "PL"
+      },
+      "url": "https://olsztyn-podolog.pl",
+      "telephone": "+48 501 768 849",
+      "description": "Profesjonalne usługi podologiczne w Olsztynie – usuwanie odcisków, wrastających paznokci, pękających pięt.",
+      "priceRange": "$",
+      "openingHours": "Mo-Fr 09:00-18:00"
+    }
+  </script>
   </head>
 
   <body>
-    <!-- Cookie Consent by https://www.TermsFeed.com -->
-    <script type="text/javascript" src="//www.termsfeed.com/public/cookie-consent/3.1.0/cookie-consent.js"></script>
-    <script type="text/javascript">
-      document.addEventListener('DOMContentLoaded', function () {
-        cookieconsent.run({
-          "notice_banner_type": "interstitial",
-          "consent_type": "implied",
-          "palette": "dark",
-          "language": "pl",
-          "website_name": "podolog-olsztyn.pl",
-          "cookies_policy_url": ""
-        });
-      });
-    </script>
+    <div class="w-screen">
+      <div id="app_header"></div>
+      <div id="app_hero"></div>
+      <div id="app_services"></div>
+      <div id="app_about"></div>
+      <div id="app_gallery"></div>
+      <div id="app_location"></div>
+      <div id="app_footer"></div>
+    </div>
 
-    <noscript>Cookie Consent by <a href="https://www.TermsFeed.com/" rel="nofollow">TermsFeed</a></noscript>
-    <!-- End Cookie Consent -->
-
-    <main class="glowna">
-      <nav class="side">
-
-        <a href="/">
-          <div class="box">
-            <p>Strona główna</p>
-          </div>
-        </a>
-        <a href="offer">
-          <div class="box">
-            <p>Oferta</p>
-          </div>
-        </a>
-
-        <a href="about">
-          <div class="box">
-            <p>O mnie</p>
-          </div>
-        </a>
-
-        <a href="gallery">
-          <div class="box">
-            <p>Galeria</p>
-          </div>
-        </a>
-
-
-      </nav>
-      <header>
-        <h1>Gabinet Specjalistycznej Pielęgnacji Stóp i Dłoni Agnieszka Sawczuk</h1>
-
-        <div class="line"></div>
-
-        <nav>
-
-          <a href="/">
-            <div class="box">
-              <p>Strona główna</p>
-            </div>
-          </a>
-          <a href="offer">
-            <div class="box">
-              <p>Oferta</p>
-            </div>
-          </a>
-
-          <a href="about">
-            <div class="box">
-              <p>O mnie</p>
-            </div>
-          </a>
-
-          <a href="gallery">
-            <div class="box">
-              <p>Galeria</p>
-            </div>
-          </a>
-
-
-        </nav>
-
-
-      </header>
-      <article class="opisus"><img class="zdj1" src="zdj/pedi.webp"/>
-        <div class="text">
-          <h2>Pedicure podologiczny (medyczny)</h2>
-          <p>Pedicure medyczny jest pielęgnacją i leczeniem stóp. Polega on na fachowym i najczęściej bezbolesnym usuwaniu modzeli, nagniotków, grubej i twardej skóry na stopach, fachowej obróbce paznokci stóp oraz zastosowaniu odpowiednio dobranych kremów lub preparatów. Podczas pedicuru specjalistycznego używa się często drogiego sprzętu i wysterylizowanych narzędzi co zapewnia klientowi bezpieczeństwo podczas wykonywania usługi.</p>
-        </div>
-
-        <div class="text2">
-          <h2>Pedicure kosmetyczny (klasyczny)</h2>
-          <p>Pedicure kosmetyczny jest pielęgnacją zdrowych stóp poprzez powierzchowną obróbkę zdrowej skóry na stopach za pomocą frezarki oraz usunięciu skórek okołopaznokciowych, skróceniu paznokci i ich pomalowaniu.</p>
-        </div>
-        <img class="zdj2" src="zdj/pedicure.webp"/>
-      </article>
-      <div class="mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1178.7912788046167!2d20.4818581656067!3d53.779118392674704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e27ed3b3b50181%3A0xfba9d28e4af1611e!2sKrzysztofa%20Mrongowiusza%206%2C%2011-041%20Olsztyn!5e0!3m2!1spl!2spl!4v1672755424345!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
-        <div class="info">
-          <h2>Gabinet Specjalistycznej Pielęgnacji Stóp i Dłoni Agnieszka Sawczuk</h2>
-          <ul>
-            <li>Adres: Krzysztofa Mrongowiusza 6/4, 11-041 Olsztyn</li><br/>
-            <li>Email: agasawczuk@vp.pl</li><br/>
-            <li>Telefon: 501 768 849</li><br/>
-            <li>Otwarte od poniedziałku do piątku w godzinach 9:00-18:00</li>
-
-
-          </ul>
-
-
-        </div>
+    <div id="cookie-banner" class="fixed bottom-4 left-4 right-4 md:left-6 md:right-auto md:max-w-md bg-white border border-pink-300 shadow-lg rounded-xl p-4 z-[999] flex flex-col md:flex-row items-center justify-between gap-4 transition-opacity duration-300">
+      <p class="text-sm text-gray-800">
+        Ta strona używa plików cookies do analityki i usług zewnętrznych.
+        <a href="polityka-prywatnosci" class="underline text-pink-500 opacity-60 hover:text-pink-600">Dowiedz się więcej</a>.
+      </p>
+      <div class="flex gap-2">
+        <button id="accept-cookies" class="bg-pink-500 opacity-60 hover:bg-pink-600 text-white px-4 py-2 rounded-lg text-sm shadow cursor-pointer">
+          Akceptuję
+        </button>
+        <button id="deny-cookies" class="bg-gray-300 hover:bg-gray-400 text-gray-800 px-4 py-2 rounded-lg text-sm cursor-pointer">
+          Odrzuć
+        </button>
       </div>
+    </div>
 
-      <footer>Strona stworzona przez Szymona Sawczuka</footer>
-    </main>
+
+    <script src="script.js"></script>
 
   </body>
-
 </html>
