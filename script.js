@@ -80,4 +80,16 @@ Promise.all([
   function loadExternalScripts() {
     loadGoogleMap();
   }
+
+  const img = document.getElementById('img-hero');
+
+  if (img.complete) {
+    img.classList.add('opacity-55');
+  } else {
+    img.addEventListener('load', () => {
+      img.classList.add('opacity-100');
+    });
+  }
+
 });
+
