@@ -3,19 +3,19 @@
     "group": "pedicure",
     "name": "pedicure medyczny",
     "desc": "z użyciem skalpela i frezarki",
-    "price": "180-220zł"
+    "price": "200-240zł"
   },
   {
     "group": "pedicure",
     "name": "pedicure klasyczny",
     "desc": "z użyciem frezarki",
-    "price": "160zł"
+    "price": "180zł"
   },
   {
     "group": "pedicure",
     "name": "wrastający paznokieć",
     "desc": "z wycięciem wrastającego elementu",
-    "price": "130zł"
+    "price": "150zł"
   },
   {
     "group": "pedicure",
@@ -27,13 +27,13 @@
     "group": "pedicure",
     "name": "kontrola klamry",
     "desc": "",
-    "price": "130zł"
+    "price": "150zł"
   },
   {
     "group": "pedicure",
     "name": "oczyszczenie paznokci zmienionych chorobowo",
     "desc": "",
-    "price": "120-180zł"
+    "price": "130-180zł"
   },
   {
     "group": "manicure",
@@ -45,7 +45,7 @@
     "group": "manicure",
     "name": "manicure hybrydowy",
     "desc": "",
-    "price": "120zł"
+    "price": "130zł"
   },
   {
     "group": "manicure",
@@ -99,7 +99,7 @@
     "group": "inne",
     "name": "badanie mykologiczne z pobraniem materiału",
     "desc": "materiał wysyłany do laboratorium",
-    "price": "130zł"
+    "price": "100zł"
   },
   {
     "group": "inne",
