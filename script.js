@@ -18,7 +18,7 @@ const enableCookies = () => {
   localStorage.setItem('cookieConsent', 'accepted');
   banner.classList.add('opacity-0');
   setTimeout(() => banner.remove(), 300);
-  loadExternalScripts(); // 🔁 Load now
+  loadExternalScripts();
 };
 
 const denyCookies = () => {
