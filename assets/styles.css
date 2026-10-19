@@ -12,3 +12,17 @@ html {
   }
 }
 
+.svg-icon {
+  display: inline-block;
+  height: 1em;
+  width: auto;
+  overflow: visible;
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+address {
+  font-style: normal;
+}
+.hero-kicker {
+  letter-spacing: normal;
+}
